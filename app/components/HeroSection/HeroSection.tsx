@@ -18,6 +18,7 @@ const HeroSection = () => {
           y: 0,
           opacity: 1,
         }}
+        transition={{duration : 0.4}}
         className="grid grid-cols-12 mt-24 px-12"
       >
         <div className="col-span-7 place-self-center">
@@ -44,13 +45,14 @@ const HeroSection = () => {
       </motion.div>
       <motion.div
         initial={{
-          y: 500,
+          x:-500,
           opacity: 0,
         }}
         animate={{
-          y: 0,
+          x: 0,
           opacity: 1,
         }}
+        transition={{duration : 0.8}}
         className="ml-10"
       >
         <button className="m-2 py-4 px-6 bg-white rounded-full hover:bg-slate-200">

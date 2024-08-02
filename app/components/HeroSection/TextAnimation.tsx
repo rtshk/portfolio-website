@@ -10,7 +10,7 @@ const TextAnimation = () => {
       // Same substring at the start will only be typed out once, initially
       'Ritesh',
       1000, // wait 1s before replacing "Mice" with "Hamsters"
-      'Full Stack Developer',
+      'Frontend Developer',
       1000
       
     ]}

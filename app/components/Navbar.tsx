@@ -1,11 +1,12 @@
 'use client'
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="w-full h-[60px] bg-[#212121] sticky">
-      <div className="flex flex-row justify-between text-white mx-10 h-full">
+    <nav className="w-full h-[60px] bg-[#121212] mt-2">
+      <div className="flex flex-row justify-between text-white ml-10 mr-20 h-full">
         <motion.div
           initial={{
             x: -500,
@@ -24,7 +25,7 @@ const Navbar = () => {
         >
           rtshk
         </motion.div>
-        <motion.div initial={{
+        <motion.div className="flex flex-row items-center" initial={{
             y: -500,
             opacity: 0,
             scale:1,
@@ -36,16 +37,41 @@ const Navbar = () => {
           }}
           transition={{
             duration: 0.5,
-          }} className="flex flex-row items-center">
-          <div className="px-10 h-full flex items-center hover:bg-slate-700">
+          }} >
+          <motion.div whileHover={{
+                scale: 1.04,
+                transition: { duration: 0.1 },
+            }} className="px-10 h-full flex items-center rounded-full hover:bg-[#222222]">
             About
-          </div>
-          <div className="px-10 h-full flex items-center hover:bg-slate-700">
+          </motion.div>
+          <motion.div
+          whileHover={{
+            scale: 1.04,
+            transition: { duration: 0.1 },
+        }} className="px-10 h-full flex items-center rounded-full hover:bg-[#222222]">
+            Skills
+          </motion.div>
+          <motion.div
+          whileHover={{
+            scale: 1.04,
+            transition: { duration: 0.1 },
+        }} className="px-10 h-full flex items-center rounded-full hover:bg-[#222222]">
             Projects
-          </div>
-          <div className="px-10 h-full flex items-center hover:bg-slate-700">
+          </motion.div>
+          <motion.div
+          whileHover={{
+            scale: 1.04,
+            transition: { duration: 0.1 },
+        }} className="px-10 h-full flex items-center rounded-full hover:bg-[#222222]">
+            Education
+          </motion.div>
+          <motion.div
+          whileHover={{
+            scale: 1.04,
+            transition: { duration: 0.1 },
+        }} className="px-10 h-full flex items-center rounded-full hover:bg-[#222222]">
             Contact
-          </div>
+          </motion.div>
         </motion.div>
       </div>
     </nav>
